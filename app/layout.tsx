@@ -1,9 +1,9 @@
 import type { Metadata } from 'next';
-import { Archivo, Archivo_Black } from 'next/font/google';
+import { Archivo, Libre_Baskerville } from 'next/font/google';
 import './globals.css';
 
 const archivo = Archivo({ variable: '--font-body', subsets: ['latin'] });
-const archivoBlack = Archivo_Black({ variable: '--font-display', weight: '400', subsets: ['latin'] });
+const libreBaskerville = Libre_Baskerville({ variable: '--font-display', weight: ['400', '700'], subsets: ['latin'] });
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://homland-nexus-estates.violetelm16.chatgpt.site'),
@@ -24,5 +24,5 @@ export const metadata: Metadata = {
 };
 
 export default function RootLayout({ children }: Readonly<{ children: React.ReactNode }>) {
-  return <html lang="en"><body className={`${archivo.variable} ${archivoBlack.variable}`}>{children}</body></html>;
+  return <html lang="en"><body className={`${archivo.variable} ${libreBaskerville.variable}`}>{children}</body></html>;
 }

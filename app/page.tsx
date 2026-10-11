@@ -1,4 +1,4 @@
-import { ArrowRight, ArrowUpRight, CheckCircle2, MapPin, ShieldCheck } from 'lucide-react';
+import { ArrowRight, ArrowUpRight, Building2, CheckCircle2, FileCheck2, MapPin, ShieldCheck, UsersRound } from 'lucide-react';
 import { Footer, Header, SectionIntro, whatsappUrl } from '@/components/site-chrome';
 
 export default function Home() {
@@ -33,7 +33,31 @@ export default function Home() {
           <img src="/media/nexus-residence.jpeg" alt="Nexus Residence entrance concept" />
         </div>
       </section>
+      <section className="section home-services">
+        <div className="shell">
+          <SectionIntro label="What we do" title="Guidance at every step." copy="From finding the right property to inspection, documentation, and allocation, our team keeps the process clear." />
+          <div className="home-service-grid">
+            <article><MapPin /><span>01</span><h3>Land sales</h3><p>Verified options in strategic, growth-ready locations.</p></article>
+            <article><Building2 /><span>02</span><h3>Site inspections</h3><p>Visit the land, understand the area, and decide with clarity.</p></article>
+            <article><FileCheck2 /><span>03</span><h3>Ownership support</h3><p>Dependable guidance through documentation and allocation.</p></article>
+          </div>
+          <a className="text-link" href="/services">Explore our services <ArrowRight /></a>
+        </div>
+      </section>
+      <section className="section home-about">
+        <div className="shell home-about-grid">
+          <div className="home-about-images"><img src="/media/site-inspection.jpeg" alt="Homland Nexus team during a site inspection" /><img src="/media/homland-team.jpeg" alt="Homland Nexus team and training participants" /></div>
+          <div className="home-about-copy">
+            <p className="eyebrow"><span /> About Homland Nexus</p>
+            <h2>Property ownership, made more personal.</h2>
+            <p>We are a Port Harcourt real estate company helping individuals and families access credible property opportunities, make informed decisions, and build lasting value.</p>
+            <div className="home-about-points"><span><ShieldCheck /> Transparent dealings</span><span><UsersRound /> Client-first guidance</span></div>
+            <a className="text-link" href="/about">Meet Homland Nexus <ArrowRight /></a>
+          </div>
+        </div>
+      </section>
       <section className="cta-section"><div className="shell cta-grid"><div><p className="eyebrow"><span /> Your next move</p><h2>Let&apos;s find the right land for your future.</h2></div><div><p>Speak with a property adviser, ask about current availability, or schedule a guided site inspection.</p><a className="button cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">Book an inspection <ArrowUpRight /></a></div></div></section>
+      <section className="home-contact"><div className="shell home-contact-grid"><div><span>Visit our office</span><strong>29 Olu Obasanjo Road, Port Harcourt</strong></div><div><span>Speak with an adviser</span><a href="tel:+2347063980382">+234 706 398 0382</a></div><a className="text-link" href="/contact">Contact us <ArrowRight /></a></div></section>
       <Footer />
     </main>
   );
