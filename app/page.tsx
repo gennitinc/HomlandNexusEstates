@@ -26,7 +26,7 @@ export default function Home() {
             <p className="hero-lede">We help buyers find verified property in growth areas across Rivers State, inspect the location, understand the documents, and complete allocation with clarity.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="/properties">See available properties <ArrowRight /></a>
-              <a className="button button-secondary" href={whatsappUrl} target="_blank" rel="noreferrer">Book an inspection</a>
+              <a className="button button-secondary" href={whatsappUrl} target="_blank" rel="noreferrer">Chat on WhatsApp</a>
             </div>
             <div className="hero-proof" aria-label="Property assurance"><span><CheckCircle2 /> Registered survey options</span><span><CheckCircle2 /> Guided site visits</span></div>
           </div>
@@ -87,8 +87,8 @@ export default function Home() {
         <div className="shell"><SectionIntro label="Recent moments" title="Properties, inspections, and people." copy="See more of our sites, client milestones, and team activities." /><div className="home-gallery-grid"><figure className="home-gallery-main"><img src="/media/happy-clients.jpeg" alt="Clients celebrating a property ownership milestone" /><figcaption>Ownership milestones</figcaption></figure><figure><img src="/media/empower-centre.jpeg" alt="Homland Nexus team at the Empower Centre" /><figcaption>Professional development</figcaption></figure><figure><img src="/media/runyis-residence.jpeg" alt="Runyis Residence entrance concept" /><figcaption>Runyis Residence</figcaption></figure></div><a className="text-link" href="/gallery">View the gallery <ArrowRight /></a></div>
       </section>
 
-      <section className="cta-section"><div className="shell cta-grid"><div><p className="eyebrow">Plan your site visit</p><h2>See the location before you make a decision.</h2></div><div><p>Speak with a property adviser about availability and choose a convenient inspection date.</p><a className="button cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">Book on WhatsApp <ArrowUpRight /></a></div></div></section>
-      <section className="home-contact"><div className="shell home-contact-grid"><div><span>Visit our office</span><strong>29 Olu Obasanjo Road, Port Harcourt</strong></div><div><span>Call an adviser</span><a href="tel:+2347063980382">+234 706 398 0382</a></div><a className="text-link" href="/contact">Full contact details <ArrowRight /></a></div></section>
+      <section className="cta-section"><div className="shell cta-grid"><div><p className="eyebrow">Plan your site visit</p><h2>See the location before you make a decision.</h2></div><div><p>Speak with a property adviser about availability and choose a convenient inspection date.</p><a className="button cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">Chat on WhatsApp <ArrowUpRight /></a></div></div></section>
+      <section className="home-contact"><div className="shell home-contact-grid"><div><span>Visit our office</span><strong>29 Olu Obasanjo Road, Port Harcourt</strong></div><div><span>WhatsApp an adviser</span><a href={whatsappUrl} target="_blank" rel="noreferrer">+234 706 398 0382</a></div><a className="text-link" href="/contact">Full contact details <ArrowRight /></a></div></section>
       <Footer />
     </main>
   );

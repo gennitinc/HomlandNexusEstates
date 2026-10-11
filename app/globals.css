@@ -421,7 +421,7 @@ body { background: #fff; -webkit-font-smoothing: antialiased; }
 .home-about-copy > p:not(.eyebrow) { color: var(--muted); font-size: 14px; }
 .home-about-points { color: var(--ink); }
 .home-about .text-link { color: var(--orange); }
-.home-process { padding: 82px 0; color: white; background: #212720; }
+.home-process { padding: 82px 0; color: white; background: #000; }
 .home-process .shell { display: grid; grid-template-columns: .68fr 1.32fr; gap: 70px; }
 .home-process .eyebrow { color: #d99876; }
 .home-process-heading h2 { max-width: 390px; margin: 0; font: 500 38px/1.12 var(--font-display); letter-spacing: -.04em; }
@@ -438,12 +438,12 @@ body { background: #fff; -webkit-font-smoothing: antialiased; }
 .cta-grid h2 { font-size: clamp(36px, 4.2vw, 54px); }
 .cta-grid > div:last-child > p { color: rgb(255 255 255 / 72%); font-size: 14px; }
 .home-contact { padding: 34px 0; background: #8f4025; }
-.page-hero { min-height: 340px; padding: 74px 0 66px; background: #212720; }
+.page-hero { min-height: 340px; padding: 74px 0 66px; background: #000; }
 .page-hero h1 { font-size: clamp(38px, 4.6vw, 58px); }
 .property-card, .contact-cards article { border-radius: 10px; }
 .property-card { border: 1px solid var(--line); }
 .service-card { min-height: 240px; }
-footer { background: #171b17; }
+.about, footer { background: #000; }
 
 @media (hover: hover) and (pointer: fine) {
   .home-property-card:hover .home-property-image img { transform: scale(1.025); }

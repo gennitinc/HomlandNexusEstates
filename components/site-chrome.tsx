@@ -31,7 +31,7 @@ export function Header() {
           <summary aria-label="Open navigation"><Menu /></summary>
           <nav aria-label="Mobile navigation">{navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}</nav>
         </details>
-        <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Book inspection <ArrowUpRight aria-hidden="true" /></a>
+        <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Chat on WhatsApp <ArrowUpRight aria-hidden="true" /></a>
       </div>
     </header>
   );
@@ -46,7 +46,7 @@ export function Footer() {
           <nav id="footer-nav" aria-label="Footer navigation">
             {navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}
           </nav>
-          <div className="footer-contact"><a href="tel:+2347063980382">+234 706 398 0382</a><a href="mailto:homlandnexuslimited@gmail.com">homlandnexuslimited@gmail.com</a></div>
+          <div className="footer-contact"><a href={whatsappUrl} target="_blank" rel="noreferrer">WhatsApp: +234 706 398 0382</a><a href="mailto:homlandnexuslimited@gmail.com">homlandnexuslimited@gmail.com</a></div>
         </div>
         <div className="shell footer-bottom"><span>© 2026 Homland Nexus Estates Limited.</span><span>Every plot a promise. Every home a legacy.</span></div>
       </footer>

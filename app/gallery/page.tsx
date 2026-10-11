@@ -31,7 +31,7 @@ export default function GalleryPage() {
           ))}
         </div>
       </section>
-      <section className="gallery-cta"><div className="shell"><div><span>See a property you like?</span><h2>Book a guided inspection.</h2></div><a className="button cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">Choose a date <ArrowUpRight /></a></div></section>
+      <section className="gallery-cta"><div className="shell"><div><span>See a property you like?</span><h2>Book a guided inspection.</h2></div><a className="button cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">Chat on WhatsApp <ArrowUpRight /></a></div></section>
       <Footer />
     </main>
   );
