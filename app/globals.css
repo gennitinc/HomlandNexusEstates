@@ -330,7 +330,7 @@ footer { color: #b5b1a9; background: #0c0c0b; }
   .page-hero h1 { font-size: clamp(38px, 11vw, 50px); }
 }
 /* Real-estate editorial refresh */
-:root { --orange: #a94d2b; --orange-hot: #c9653d; --ink: #1d211d; --paper: #f5f3ed; --line: #dedbd2; --muted: #62655f; }
+:root { --orange: #ea5603; --orange-hot: #ff6700; --ink: #090a0b; --paper: #f6f6f3; --line: #deded8; --muted: #5e605d; }
 body { background: #fff; -webkit-font-smoothing: antialiased; }
 .shell { width: min(1160px, calc(100% - 48px)); }
 .site-header { position: sticky; inset: auto; top: 0; z-index: 50; color: var(--ink); background: rgb(255 255 255 / 94%); border-bottom: 1px solid var(--line); backdrop-filter: blur(16px); }
@@ -423,29 +423,29 @@ body { background: #fff; -webkit-font-smoothing: antialiased; }
 .home-about .text-link { color: var(--orange); }
 .home-process { padding: 82px 0; color: white; background: #000; }
 .home-process .shell { display: grid; grid-template-columns: .68fr 1.32fr; gap: 70px; }
-.home-process .eyebrow { color: #d99876; }
+.home-process .eyebrow { color: var(--orange); }
 .home-process-heading h2 { max-width: 390px; margin: 0; font: 500 38px/1.12 var(--font-display); letter-spacing: -.04em; }
 .home-process ol { display: grid; grid-template-columns: 1fr 1fr; gap: 0; margin: 0; padding: 0; list-style: none; border-top: 1px solid rgb(255 255 255 / 16%); border-left: 1px solid rgb(255 255 255 / 16%); }
 .home-process li { display: grid; grid-template-columns: 30px 1fr; gap: 14px; min-height: 145px; padding: 24px; border-right: 1px solid rgb(255 255 255 / 16%); border-bottom: 1px solid rgb(255 255 255 / 16%); }
-.home-process li > span { color: #d99876; font: 500 17px var(--font-display); }
+.home-process li > span { color: var(--orange); font: 500 17px var(--font-display); }
 .home-process strong { font-size: 14px; }
 .home-process li p { margin: 8px 0 0; color: #aeb6ad; font-size: 12px; line-height: 1.6; }
 .home-gallery { background: var(--paper); }
 .home-gallery-grid { grid-template-rows: repeat(2, 220px); gap: 12px; margin-top: 42px; }
 .home-gallery-grid figure { border-radius: 9px; }
 .home-gallery-grid figcaption { border-radius: 5px; }
-.cta-section { padding: 84px 0; background: #a94d2b; }
+.cta-section { padding: 84px 0; background: var(--orange); }
 .cta-grid h2 { font-size: clamp(36px, 4.2vw, 54px); }
 .cta-grid > div:last-child > p { color: rgb(255 255 255 / 72%); font-size: 14px; }
-.home-contact { padding: 34px 0; background: #8f4025; }
+.home-contact { padding: 34px 0; background: var(--ink); }
 .page-hero { min-height: 340px; padding: 74px 0 66px; background: #000; }
 .page-hero h1 { font-size: clamp(38px, 4.6vw, 58px); }
 .property-card, .contact-cards article { border-radius: 10px; }
 .property-card { border: 1px solid var(--line); }
 .service-card { min-height: 240px; }
 .about, footer { background: #000; }
-.whatsapp-float { right: max(20px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); z-index: 100; width: auto; height: 52px; display: inline-flex; grid: none; gap: 9px; padding: 0 17px; border-radius: 999px; background: #25d366; font-size: 12px; font-weight: 800; }
-.whatsapp-float svg { width: 20px; height: 20px; }
+.whatsapp-float { right: max(20px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); z-index: 100; width: 58px; height: 58px; display: grid; place-items: center; padding: 12px; border: 1px solid rgb(0 0 0 / 8%); border-radius: 50%; color: white; background: #25d366; }
+.whatsapp-float svg { width: 100%; height: 100%; }
 
 @media (hover: hover) and (pointer: fine) {
   .home-property-card:hover .home-property-image img { transform: scale(1.025); }

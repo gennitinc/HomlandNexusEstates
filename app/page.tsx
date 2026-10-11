@@ -22,7 +22,7 @@ export default function Home() {
         <div className="shell hero-grid">
           <div className="hero-copy">
             <p className="eyebrow">Port Harcourt property specialists</p>
-            <h1 id="hero-title">Land you can understand. Ownership you can trust.</h1>
+            <h1 id="hero-title">Land ownership you can trust.</h1>
             <p className="hero-lede">We help buyers find verified property in growth areas across Rivers State, inspect the location, understand the documents, and complete allocation with clarity.</p>
             <div className="hero-actions">
               <a className="button button-primary" href="/properties">See available properties <ArrowRight /></a>
@@ -31,7 +31,7 @@ export default function Home() {
             <div className="hero-proof" aria-label="Property assurance"><span><CheckCircle2 /> Registered survey options</span><span><CheckCircle2 /> Guided site visits</span></div>
           </div>
           <div className="hero-visual">
-            <div className="hero-image-wrap"><img src="/media/nexus-residence.jpeg" alt="Nexus Residence in Choba, Port Harcourt" /></div>
+            <div className="hero-image-wrap"><img src="/media/homland-team.jpeg" alt="Nexus Residence in Choba, Port Harcourt" /></div>
             <div className="hero-listing"><div><span>Available in Choba</span><strong>Nexus Residence</strong></div><div><span>Starting from</span><strong>₦20M</strong></div></div>
           </div>
         </div>
