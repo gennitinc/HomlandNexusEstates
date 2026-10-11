@@ -27,7 +27,10 @@ export function Header() {
         <nav className="desktop-nav" aria-label="Main navigation">
           {navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}
         </nav>
-        <a className="mobile-menu" href="#footer-nav" aria-label="Open navigation"><Menu /></a>
+        <details className="mobile-menu">
+          <summary aria-label="Open navigation"><Menu /></summary>
+          <nav aria-label="Mobile navigation">{navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}</nav>
+        </details>
         <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Book inspection <ArrowUpRight aria-hidden="true" /></a>
       </div>
     </header>
