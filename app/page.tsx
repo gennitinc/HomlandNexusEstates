@@ -56,6 +56,17 @@ export default function Home() {
           </div>
         </div>
       </section>
+      <section className="section home-gallery">
+        <div className="shell">
+          <SectionIntro label="Gallery" title="The work behind every promise." copy="A glimpse of our properties, inspections, client milestones, and the people building Homland Nexus." />
+          <div className="home-gallery-grid">
+            <figure className="home-gallery-main"><img src="/media/happy-clients.jpeg" alt="Clients celebrating a property ownership milestone" /><figcaption>Ownership milestones</figcaption></figure>
+            <figure><img src="/media/runyis-residence.jpeg" alt="Runyis Residence entrance concept" /><figcaption>Featured properties</figcaption></figure>
+            <figure><img src="/media/empower-centre.jpeg" alt="Homland Nexus team at the Empower Centre" /><figcaption>Professional growth</figcaption></figure>
+          </div>
+          <a className="text-link" href="/gallery">View the full gallery <ArrowRight /></a>
+        </div>
+      </section>
       <section className="cta-section"><div className="shell cta-grid"><div><p className="eyebrow"><span /> Your next move</p><h2>Let&apos;s find the right land for your future.</h2></div><div><p>Speak with a property adviser, ask about current availability, or schedule a guided site inspection.</p><a className="button cta-button" href={whatsappUrl} target="_blank" rel="noreferrer">Book an inspection <ArrowUpRight /></a></div></div></section>
       <section className="home-contact"><div className="shell home-contact-grid"><div><span>Visit our office</span><strong>29 Olu Obasanjo Road, Port Harcourt</strong></div><div><span>Speak with an adviser</span><a href="tel:+2347063980382">+234 706 398 0382</a></div><a className="text-link" href="/contact">Contact us <ArrowRight /></a></div></section>
       <Footer />

@@ -6,6 +6,7 @@ export const navItems = [
   ['/properties', 'Properties'],
   ['/services', 'Services'],
   ['/about', 'About'],
+  ['/gallery', 'Gallery'],
   ['/contact', 'Contact'],
 ];
 
