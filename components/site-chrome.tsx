@@ -1,4 +1,4 @@
-import { ArrowUpRight, House, Menu, Phone } from 'lucide-react';
+import { ArrowUpRight, House, Menu, MessageCircle } from 'lucide-react';
 
 export const whatsappUrl = 'https://wa.me/2347063980382?text=Hello%20Homland%20Nexus%2C%20I%20would%20like%20to%20book%20a%20property%20inspection.';
 
@@ -31,7 +31,7 @@ export function Header() {
           <summary aria-label="Open navigation"><Menu /></summary>
           <nav aria-label="Mobile navigation">{navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}</nav>
         </details>
-        <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Chat on WhatsApp <ArrowUpRight aria-hidden="true" /></a>
+        <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Book Appointment <ArrowUpRight aria-hidden="true" /></a>
       </div>
     </header>
   );
@@ -50,7 +50,7 @@ export function Footer() {
         </div>
         <div className="shell footer-bottom"><span>© 2026 Homland Nexus Estates Limited.</span><span>Every plot a promise. Every home a legacy.</span></div>
       </footer>
-      <a className="whatsapp-float" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Chat with Homland Nexus on WhatsApp"><Phone /></a>
+      <a className="whatsapp-float" href={whatsappUrl} target="_blank" rel="noreferrer" aria-label="Chat with Homland Nexus on WhatsApp"><MessageCircle aria-hidden="true" /><span>WhatsApp</span></a>
     </>
   );
 }

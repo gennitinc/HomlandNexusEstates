@@ -444,6 +444,8 @@ body { background: #fff; -webkit-font-smoothing: antialiased; }
 .property-card { border: 1px solid var(--line); }
 .service-card { min-height: 240px; }
 .about, footer { background: #000; }
+.whatsapp-float { right: max(20px, env(safe-area-inset-right)); bottom: max(20px, env(safe-area-inset-bottom)); z-index: 100; width: auto; height: 52px; display: inline-flex; grid: none; gap: 9px; padding: 0 17px; border-radius: 999px; background: #25d366; font-size: 12px; font-weight: 800; }
+.whatsapp-float svg { width: 20px; height: 20px; }
 
 @media (hover: hover) and (pointer: fine) {
   .home-property-card:hover .home-property-image img { transform: scale(1.025); }
