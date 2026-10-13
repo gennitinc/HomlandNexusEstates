@@ -25,8 +25,7 @@ export default function Home() {
             <h1 id="hero-title">Land ownership you can trust.</h1>
             <p className="hero-lede">We help buyers find verified property in growth areas across Rivers State, inspect the location, understand the documents, and complete allocation with clarity.</p>
             <div className="hero-actions">
-              <a className="button button-primary" href="/properties">See available properties <ArrowRight /></a>
-              <a className="button button-secondary" href={whatsappUrl} target="_blank" rel="noreferrer">Chat on WhatsApp</a>
+
             </div>
             <div className="hero-proof" aria-label="Property assurance"><span><CheckCircle2 /> Registered survey options</span><span><CheckCircle2 /> Guided site visits</span></div>
           </div>
