@@ -1,5 +1,5 @@
 import type { SVGProps } from 'react';
-import { ArrowUpRight, House, Menu } from 'lucide-react';
+import { ArrowUpRight, House, Menu, X } from 'lucide-react';
 
 export const whatsappUrl = 'https://wa.me/2347063980382?text=Hello%20Homland%20Nexus%2C%20I%20would%20like%20to%20book%20a%20property%20inspection.';
 
@@ -40,8 +40,12 @@ export function Header() {
           {navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}
         </nav>
         <details className="mobile-menu">
-          <summary aria-label="Open navigation"><Menu /></summary>
-          <nav aria-label="Mobile navigation">{navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}</nav>
+          <summary aria-label="Toggle navigation"><Menu className="menu-open-icon" /><X className="menu-close-icon" /></summary>
+          <div className="mobile-menu-panel">
+            <Brand />
+            <nav aria-label="Mobile navigation">{navItems.map(([href, label]) => <a href={href} key={href}>{label}</a>)}</nav>
+            <a className="mobile-menu-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Book Appointment <ArrowUpRight aria-hidden="true" /></a>
+          </div>
         </details>
         <a className="nav-cta" href={whatsappUrl} target="_blank" rel="noreferrer">Book Appointment <ArrowUpRight aria-hidden="true" /></a>
       </div>
