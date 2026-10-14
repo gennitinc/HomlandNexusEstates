@@ -4,9 +4,10 @@ import './globals.css';
 
 const manrope = Manrope({ variable: '--font-body', subsets: ['latin'] });
 const lora = Lora({ variable: '--font-display', subsets: ['latin'] });
+const productionUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL;
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://homland-nexus-estates.violetelm16.chatgpt.site'),
+  metadataBase: new URL(productionUrl ? `https://${productionUrl}` : 'http://localhost:3000'),
   title: 'Homland Nexus Estates | Own Land. Build Your Future.',
   description: 'Verified land and property investment opportunities in Port Harcourt, Rivers State. Book an inspection with Homland Nexus Estates Limited.',
   openGraph: {
