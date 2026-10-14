@@ -475,7 +475,7 @@ body { background: #fff; -webkit-font-smoothing: antialiased; }
   .home-property-title h2 { font-size: 22px; }
   .section-footer { align-items: flex-start; flex-direction: column; }
   .home-services-layout { grid-template-columns: 1fr; gap: 38px; }
-  .home-about-grid { gap: 46px; }
+  .home-about-grid { grid-template-columns: 1fr; gap: 46px; }
   .home-about-images img { height: 340px; }
   .home-about-images img:last-child { height: 250px; }
   .home-process { padding: 70px 0; }
